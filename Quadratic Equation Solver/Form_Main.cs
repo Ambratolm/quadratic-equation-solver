@@ -10,6 +10,9 @@ namespace QuadraticEquationSolver
         public Form_Main()
         {
             InitializeComponent();
+            numericUpDown_a.TextChanged += new EventHandler(numericUpDown_a_ValueChanged);
+            numericUpDown_b.TextChanged += new EventHandler(numericUpDown_b_ValueChanged);
+            numericUpDown_c.TextChanged += new EventHandler(numericUpDown_c_ValueChanged);
         }
 
         private void update_equation()
